@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Luxury School Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Glassmorphism background blur */
+    .glass {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border-radius: 1rem;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+      transition: all 0.3s ease;
+    }
+    .glass:hover {
+      box-shadow: 0 12px 40px 0 rgba(255, 215, 0, 0.3);
+      border-color: rgba(255, 215, 0, 0.5);
+    }
+    /* Gold accent color */
+    .gold {
+      color: #d4af37;
+    }
+    /* Smooth transitions for buttons and links */
+    .transition-smooth {
+      transition: all 0.3s ease-in-out;
+    }
+  </style>
+</head>
+<body class="bg-white font-poppins text-gray-800 min-h-screen flex flex-col">
+
+  <!-- Navigation Bar -->
+  <nav class="glass fixed top-0 left-0 right-0 z-50 backdrop-blur-md px-8 py-4 flex justify-between items-center shadow-md">
+    <div class="text-2xl font-bold gold select-none cursor-default">Luxury School</div>
+    <ul class="flex space-x-8 text-gray-800 font-semibold">
+      <li><a href="#" class="hover:gold transition-smooth">Home</a></li>
+      <li><a href="#" class="hover:gold transition-smooth">About</a></li>
+      <li><a href="#" class="hover:gold transition-smooth">Programs</a></li>
+      <li><a href="#" class="hover:gold transition-smooth">Admissions</a></li>
+      <li><a href="#" class="hover:gold transition-smooth">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="flex-grow flex items-center justify-center relative pt-24 px-6">
+    <div class="glass max-w-5xl w-full p-12 text-center shadow-lg">
+      <img src="https://images.unsplash.com/photo-1596495578060-c2f999b7a7a3?auto=format&fit=crop&w=80&q=80" alt="School Logo" class="mx-auto mb-6 rounded-full border-4 border-gold" />
+      <h1 class="text-5xl font-extrabold mb-4 text-gray-900">Excellence in Education</h1>
+      <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">Empowering students to achieve their dreams with passion, knowledge, and integrity.</p>
+      <a href="#enroll" class="inline-block bg-gold text-white font-semibold px-8 py-3 rounded-full shadow-lg hover:bg-yellow-500 transition-smooth">Enroll Now</a>
+    </div>
+  </header>
+
+  <!-- Alumni Testimonials Section -->
+  <section class="px-6 py-16 bg-gray-50">
+    <h2 class="text-4xl font-bold text-center mb-12 gold">Alumni Testimonials</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="glass p-6 shadow-md">
+        <p class="italic text-gray-700 mb-4">"The education and support I received here shaped my career and life. Truly a transformative experience."</p>
+        <div class="font-semibold text-gray-900">- Sarah Johnson, Class of 2015</div>
+      </div>
+      <div class="glass p-6 shadow-md">
+        <p class="italic text-gray-700 mb-4">"A nurturing environment with dedicated teachers who genuinely care about your success."</p>
+        <div class="font-semibold text-gray-900">- Michael Lee, Class of 2018</div>
+      </div>
+      <div class="glass p-6 shadow-md">
+        <p class="italic text-gray-700 mb-4">"The programs here prepared me for the challenges of the real world with confidence."</p>
+        <div class="font-semibold text-gray-900">- Emily Davis, Class of 2020</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- School Achievements Section -->
+  <section class="px-6 py-16">
+    <h2 class="text-4xl font-bold text-center mb-12 gold">Our Achievements</h2>
+    <div class="max-w-6xl mx-auto flex flex-wrap justify-around gap-12 text-center">
+      <div class="glass p-8 w-48 shadow-md">
+        <i class="fas fa-trophy text-5xl gold mb-4"></i>
+        <h3 class="text-2xl font-semibold mb-2">50+ Awards</h3>
+        <p class="text-gray-700">Recognized for academic excellence and innovation.</p>
+      </div>
+      <div class="glass p-8 w-48 shadow-md">
+        <i class="fas fa-user-graduate text-5xl gold mb-4"></i>
+        <h3 class="text-2xl font-semibold mb-2">2000+ Graduates</h3>
+        <p class="text-gray-700">Proud alumni making a difference worldwide.</p>
+      </div>
+      <div class="glass p-8 w-48 shadow-md">
+        <i class="fas fa-chalkboard-teacher text-5xl gold mb-4"></i>
+        <h3 class="text-2xl font-semibold mb-2">100+ Dedicated Teachers</h3>
+        <p class="text-gray-700">Committed to nurturing every student’s potential.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section id="enroll" class="px-6 py-20 bg-gradient-to-r from-white via-blue-100 to-white text-center">
+    <div class="max-w-4xl mx-auto glass p-12 shadow-lg rounded-xl">
+      <h2 class="text-4xl font-bold mb-6 gold">Ready to Join Our Prestigious School?</h2>
+      <p class="text-lg mb-8 text-gray-800">Take the first step towards a bright future. Apply now and become part of our community of achievers.</p>
+      <a href="#" class="bg-gold text-white font-semibold px-10 py-4 rounded-full shadow-lg hover:bg-yellow-500 transition-smooth">Enroll Now</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white text-center py-6 text-gray-600 text-sm select-none">
+    &copy; 2024 Luxury School. All rights reserved.
+  </footer>
+
+</body>
+</html>
